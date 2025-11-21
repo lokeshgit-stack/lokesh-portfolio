@@ -200,7 +200,7 @@ export const About = () => {
             </p>
 
             {/* Contact Details Card */}
-            <Card variant="glass" className="reveal-text mt-8">
+            {/* <Card variant="glass" className="reveal-text mt-8">
               <CardContent className="p-6">
                 <h4 className="text-xl font-bold text-text-primary mb-4 flex items-center gap-2">
                   <span>📞</span>
@@ -250,7 +250,7 @@ export const About = () => {
                   </div>
                 </div>
               </CardContent>
-            </Card>
+            </Card> */}
 
             {/* Action Buttons */}
             <div className="reveal-text pt-6 flex flex-wrap gap-4">

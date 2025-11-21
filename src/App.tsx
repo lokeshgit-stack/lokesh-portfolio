@@ -10,6 +10,7 @@ import { Projects } from '@/components/sections/Projects';
 import { Education } from '@/components/sections/Education';
 import { Contact } from '@/components/sections/Contact';
 import { canHandleHeavyAnimations } from '@/utils/performance';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import './styles/globals.css';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className="relative bg-primary text-text-primary overflow-x-hidden">
+      <SpeedInsights/>
       {/* Navigation */}
       <Navbar />
 

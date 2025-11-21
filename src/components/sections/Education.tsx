@@ -231,8 +231,17 @@ export const Education = () => {
           </div>
         </div>
 
+            {/* Visual Separator - ADD THIS */}
+      <div className="max-w-5xl mx-auto relative z-10 my-24">
+        <div className="flex items-center justify-center gap-4">
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+          <span className="text-accent/50 text-sm font-mono">◆</span>
+          <div className="flex-1 h-px bg-gradient-to-r from-transparent via-accent/30 to-transparent" />
+        </div>
+      </div>
+
         {/* Additional Achievements Section */}
-        <div ref={achievementsRef} className="mt-20">
+        <div ref={achievementsRef} className="mt-32 md:mt-40">
           <Card variant="glass" className="text-center">
             <div className="p-8">
               <h3 className="text-3xl font-bold text-text-primary mb-6 flex items-center justify-center gap-3">
