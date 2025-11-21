@@ -152,7 +152,7 @@ export const Hero = () => {
         {/* Name Title */}
         <h1
           ref={titleRef}
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-text-primary mb-4 mt-20 
+          className="text-3xl sm:text-7xl md:text-8xl lg:text-9xl font-extrabold text-text-primary mb-4 mt-20 
                    tracking-tight leading-tight drop-shadow-2xl"
         >
           <span className="bg-gradient-to-r from-accent via-accent-light to-accent bg-clip-text text-transparent">
