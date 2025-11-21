@@ -140,7 +140,7 @@ export const Hero = () => {
         {/* Main Title with Character Animation */}
         <h1
           ref={titleRef}
-          className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold text-text-primary mb-6 
+          className="text-6xl mt-20 sm:text-7xl md:text-8xl lg:text-9xl font-bold text-text-primary mb-6 
                    tracking-tight leading-none"
         >
           <span className="bg-gradient-to-r from-accent via-accent-light to-accent bg-clip-text text-transparent">

@@ -16,6 +16,7 @@ interface Project {
   technologies: string[];
   features: string[];
   github?: string;
+  THM?: string;
   demo?: string;
   icon: string;
   color: string;
@@ -36,8 +37,8 @@ const projects: Project[] = [
       'Email-based sharing with download tracking',
       'Real-time file metadata management',
     ],
-    github: 'https://github.com/lokeshtrivedi',
-    demo: '#',
+    github: 'https://github.com/lokeshgit-stack/File-sharing.git',
+    demo: 'https://file-sharing-service.vercel.app/',
     icon: '📁',
     color: 'from-blue-500 to-purple-500',
   },
@@ -54,7 +55,7 @@ const projects: Project[] = [
       'User session control',
       'Message history persistence',
     ],
-    github: 'https://github.com/lokeshtrivedi',
+    github: 'https://github.com/lokeshgit-stack/File-sharing.git',
     demo: '#',
     icon: '💬',
     color: 'from-green-500 to-teal-500',
@@ -72,7 +73,7 @@ const projects: Project[] = [
       'Session management',
       'SQL injection prevention',
     ],
-    github: 'https://github.com/lokeshtrivedi',
+    github: 'https://github.com/lokeshgit-stack/File-sharing.git',
     demo: '#',
     icon: '🔐',
     color: 'from-orange-500 to-red-500',
@@ -90,8 +91,8 @@ const projects: Project[] = [
       'Brute force attack analysis',
       'Directory traversal and vulnerability assessment',
     ],
-    github: 'https://github.com/lokeshtrivedi',
-    demo: '#',
+    THM: 'https://tryhackme.com/p/lokeshtrivedi200',
+    demo: 'https://tryhackme.com/p/lokeshtrivedi200',
     icon: '🛡️',
     color: 'from-purple-500 to-pink-500',
   },
@@ -170,7 +171,7 @@ export const Projects = () => {
           </div>
 
           {/* Filter Buttons */}
-          <div className="flex flex-wrap gap-3 justify-center items-center mt-8">
+          {/* <div className="flex flex-wrap gap-3 justify-center items-center mt-8">
             {filterOptions.map((option) => (
               <Button
                 key={option.value}
@@ -182,7 +183,7 @@ export const Projects = () => {
                 {option.label}
               </Button>
             ))}
-          </div>
+          </div> */}
         </div>
 
         {/* Projects Grid */}
@@ -231,7 +232,7 @@ export const Projects = () => {
                 variant="outline"
                 size="lg"
                 icon="🐙"
-                onClick={() => window.open('https://github.com/lokeshtrivedi', '_blank')}
+                onClick={() => window.open('https://github.com/lokeshgit-stack', '_blank')}
               >
                 View GitHub
               </Button>

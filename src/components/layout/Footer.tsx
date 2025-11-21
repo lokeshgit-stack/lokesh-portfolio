@@ -37,8 +37,8 @@ const footerLinks: FooterLinks = {
     {
       title: 'Connect',
       links: [
-        { name: 'LinkedIn', href: 'https://linkedin.com/in/lokesh-trivedi', external: true },
-        { name: 'GitHub', href: 'https://github.com/lokeshtrivedi', external: true },
+        { name: 'LinkedIn', href: 'https://in.linkedin.com/in/lokesh-trivedi-66572b246', external: true },
+        { name: 'GitHub', href: 'https://github.com/lokeshgit-stack', external: true },
         { name: 'Email', href: 'mailto:lokeshtrivedi2004@gmail.com', external: true },
         { name: 'Resume', href: '/resume.pdf', external: true },
       ],
@@ -67,14 +67,14 @@ export const Footer = () => {
               </span>
             </div>
             <p className="text-text-secondary mb-6 leading-relaxed">
-              Frontend Developer specializing in React.js and modern web technologies.
+              Fullstack Developer specializing in React.js, CyberSecurity and modern web technologies.
               Building secure, responsive, and interactive applications.
             </p>
             
             {/* Social Links */}
             <div className="flex space-x-4">
               <a
-                href="https://linkedin.com/in/lokesh-trivedi"
+                href="https://in.linkedin.com/in/lokesh-trivedi-66572b246"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-lg 
@@ -86,7 +86,7 @@ export const Footer = () => {
                 <span className="text-xl">💼</span>
               </a>
               <a
-                href="https://github.com/lokeshtrivedi"
+                href="https://github.com/lokeshgit-stack"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 flex items-center justify-center rounded-lg 
@@ -176,7 +176,7 @@ export const Footer = () => {
         </div>
 
         {/* Back to Top Button */}
-        <div className="text-center mt-8">
+        {/* <div className="text-center mt-8">
           <button
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="inline-flex items-center gap-2 px-4 py-2 bg-primary-light 
@@ -186,7 +186,7 @@ export const Footer = () => {
             <span>↑</span>
             <span>Back to Top</span>
           </button>
-        </div>
+        </div> */}
       </div>
     </footer>
   );

@@ -69,13 +69,13 @@ export const NAV_LINKS = [
 // Personal information
 export const PERSONAL_INFO = {
   name: 'Lokesh Trivedi',
-  title: 'Frontend Developer',
+  title: 'Fullstack Developer',
   subtitle: 'React.js Enthusiast | CSE Student',
   email: 'lokeshtrivedi2004@gmail.com',
   phone: '+91 9950099543',
   location: 'Sojat City, Pali, Rajasthan - 306104',
-  linkedin: 'https://linkedin.com/in/lokesh-trivedi',
-  github: 'https://github.com/lokeshtrivedi',
+  linkedin: 'https://in.linkedin.com/in/lokesh-trivedi-66572b246',
+  github: 'https://github.com/lokeshgit-stack',
   resume: '/resume.pdf',
 } as const;
 
