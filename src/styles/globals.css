@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Security Theme Colors */
+    --color-primary: #0A192F;       /* Dark Navy Background */
+    --color-primary-light: #112240; /* Lighter Navy for cards */
+    --color-primary-dark: #020c1b;  /* Darker Navy for footer/nav */
+    
+    --color-accent: #64FFDA;        /* Cyan/Teal Accent */
+    --color-accent-hover: #4DFFCC;
+    --color-accent-light: #80FFE5;
+    
+    --color-text-primary: #CCD6F6;  /* Light Gray for headings */
+    --color-text-secondary: #8892B0;/* Slate Gray for paragraphs */
+    --color-text-muted: #495670;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-primary text-text-primary font-sans antialiased selection:bg-accent selection:text-primary;
+    overflow-x: hidden;
+  }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-primary-dark;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-accent/20 rounded-full hover:bg-accent/40 transition-colors;
+  }
+}
+
+@layer components {
+  /* Animations */
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 2.5s linear infinite;
+  }
+
+  /* Utility Classes for consistent colors */
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .bg-primary-light {
+    background-color: var(--color-primary-light);
+  }
+  .bg-primary-dark {
+    background-color: var(--color-primary-dark);
+  }
+  
+  .text-text-primary {
+    color: var(--color-text-primary);
+  }
+  .text-text-secondary {
+    color: var(--color-text-secondary);
+  }
+  
+  .text-accent {
+    color: var(--color-accent);
+  }
+  .bg-accent {
+    background-color: var(--color-accent);
+  }
+  .border-accent {
+    border-color: var(--color-accent);
+  }
+  
+  /* Hover states */
+  .hover\:bg-accent-hover:hover {
+    background-color: var(--color-accent-hover);
+  }
+  .hover\:text-accent-hover:hover {
+    color: var(--color-accent-hover);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.5);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(100, 255, 218, 0.8), 0 0 10px rgba(100, 255, 218, 0.5);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

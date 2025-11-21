@@ -1,0 +1,39 @@
+{
+  "name": "lokesh-portfolio-3d",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "server": "cd server && node index.js"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@react-three/drei": "^9.96.0",
+    "@react-three/fiber": "^8.15.0",
+    "@splinetool/react-spline": "^2.2.6",
+    "emailjs-com": "^3.2.0",
+    "framer-motion": "^11.0.3",
+    "gsap": "^3.12.5",
+    "lenis": "^1.0.42",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.50.0",
+    "react-router-dom": "^6.22.0",
+    "three": "^0.160.0",
+    "three-stdlib": "^2.36.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@types/three": "^0.160.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3",
+    "vite": "^5.1.0"
+  }
+}
