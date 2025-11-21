@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="relative bg-primary text-text-primary overflow-x-hidden">
-      <SpeedInsights/>
+      {/* <SpeedInsights/> */}
       {/* Navigation */}
       <Navbar />
 
